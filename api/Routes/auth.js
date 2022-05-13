@@ -13,8 +13,10 @@ router.post("/register", async (req, res) => {
         req.body.password,
         process.env.HASH_KEY
       ).toString(),
-      phone: req.body.phone,
-      // isTeacher: req.body.isTeacher,
+      phnumber: req.body.phnumber,
+      age: req.body.age,
+      address: req.body.address,
+      gender: req.body.gender,
       isAdmin: req.body.isAdmin,
       courses: req.body.courses,
       students: req.body.students,
@@ -27,8 +29,7 @@ router.post("/register", async (req, res) => {
         req.body.password,
         process.env.HASH_KEY
       ).toString(),
-      phone: req.body.phone,
-      //   isTeacher: req.body.isTeacher,
+      phnumber: req.body.phnumber,
       isAdmin: req.body.isAdmin,
       courses: req.body.courses,
       bookings: req.body.bookings,
@@ -70,6 +71,5 @@ router.post("/login", async (req, res) => {
     console.log(err);
   }
 });
-
 
 module.exports = router;
