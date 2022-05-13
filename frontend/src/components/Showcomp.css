@@ -1,0 +1,28 @@
+.seconddiv{
+	height : 350px;
+}
+
+.div21{
+	width:50%;
+	float: left;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50px;
+	height:120px;
+}
+
+.artpic{
+	width: 200px;
+	height:200px;
+	margin-left: 200px;
+}
+
+.para1{
+	margin-left: 200px;
+	color: darkturquoise;
+}
+.para2{
+	color:#fff;
+	margin-left: 200px;;
+}

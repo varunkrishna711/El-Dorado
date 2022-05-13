@@ -1,28 +1,26 @@
-import "./App.css";
-import { useEffect } from "react";
-import axios from "axios";
-import StudentForm from "./registration/StudentForm";
-import TeacherForm from "./registration/TeacherForm";
+// import './App.css';
+import Header from './Header';
+import Home from './Home';
+import Footer from './Footer';
+// import Checkout from './Checkout';
+// import Login from './Login';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import PopularShows from './PopularShows';
+// import { useEffect } from 'react';
+// import {auth} from './firebase';
+// import {useStateValue} from './StateProvider';
 
 function App() {
-  useEffect(() => {
-    const printdata = async () => {
-      await axios
-        .post(`${process.env.REACT_APP_API}/api/auth/login`, {
-          email: "latesadcst@gmail.com",
-          password: "jaidan",
-        })
-        .then((response) => {
-          console.log(response.data);
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    };
-    printdata();
-  });
+  return (
+    <Router>
+      <div className="app">
+        <Routes>
+            <Route path="/" element={<><Header /> <PopularShows /> <Footer/></>} />
+        </Routes>
+      </div>
+    </Router>
+  );
 
-  return <div className="App"></div>;
 }
 
 export default App;
