@@ -26,16 +26,18 @@ function TeacherForm() {
         .catch((error) => {
           console.log(error);
         });
+
+      printdata();
     };
-    printdata();
   };
 
   return (
     <div className="component">
       <p className="heading">Teacher Registration</p>
       <form className="Body" onSubmit={handleSubmit}>
-        <div>
-          {" "}
+        <div className="fields">
+          {/* {" "} */}
+          Name{" "}
           <input
             className="inp"
             placeholder="Name"
@@ -44,11 +46,23 @@ function TeacherForm() {
             value={inputs.username || ""}
             onChange={handleChange}
           />
-        </div>
-
-        <br />
-        <br />
-        <div>
+          {/* </div> */}
+          <br />
+          <br />
+          {/* <div> */} Password{" "}
+          <input
+            className="inp"
+            placeholder="password"
+            type="password"
+            name="password"
+            value={inputs.password || ""}
+            onChange={handleChange}
+          />
+          {/* </div> */}
+          <br />
+          <br />
+          {/* <div> */}
+          Age{" "}
           <input
             className="inp"
             placeholder="Age"
@@ -57,10 +71,11 @@ function TeacherForm() {
             value={inputs.age || ""}
             onChange={handleChange}
           />
-        </div>
-        <br />
-        <br />
-        <div>
+          {/* </div> */}
+          <br />
+          <br />
+          {/* <div> */}
+          Email{" "}
           <input
             className="inp"
             placeholder="Email"
@@ -69,39 +84,39 @@ function TeacherForm() {
             value={inputs.email || ""}
             onChange={handleChange}
           />
-        </div>
-
-        <br />
-        <br />
-        <div className="gender">
-          <label for="name">
-            Gender:
-            <input
-              type="radio"
-              name="gender"
-              value={inputs.gender || ""}
-              onChange={handleChange}
-            />
-            Male
-            <input
-              type="radio"
-              name="gender"
-              value={inputs.gender || ""}
-              onChange={handleChange}
-            />
-            Female
-            <input
-              type="radio"
-              name="gender"
-              value={inputs.gender || ""}
-              onChange={handleChange}
-            />
-            others
-          </label>
-        </div>
-        <br />
-        <br />
-        <div>
+          {/* </div> */}
+          <br />
+          <br />
+          <div className="gender">
+            <label for="name">
+              Gender:
+              <input
+                type="radio"
+                name="gender"
+                value={inputs.gender || ""}
+                onChange={handleChange}
+              />
+              Male
+              <input
+                type="radio"
+                name="gender"
+                value={inputs.gender || ""}
+                onChange={handleChange}
+              />
+              Female
+              <input
+                type="radio"
+                name="gender"
+                value={inputs.gender || ""}
+                onChange={handleChange}
+              />
+              others
+            </label>
+          </div>
+          <br />
+          <br />
+          {/* <div> */}
+          Phone Number{" "}
           <input
             className="inp"
             placeholder="Phone Number"
@@ -110,18 +125,18 @@ function TeacherForm() {
             value={inputs.phnumber || ""}
             onChange={handleChange}
           />
-        </div>
-        <br />
-        <p className="title">Address</p>
-        <textarea
-          className="txtarea"
-          name="address"
-          value={inputs.address || ""}
-          onChange={handleChange}
-        />
-        <br />
-        <br />
-        <div>
+          {/* </div> */}
+          <br />
+          <p className="title">Address</p>
+          <textarea
+            className="txtarea"
+            name="address"
+            value={inputs.address || ""}
+            onChange={handleChange}
+          />
+          <br />
+          <br />
+          {/* <div> */}
           <p className="title">Name the art forms you could teach</p>{" "}
           {/** has to be added into an array */}
           <input
@@ -131,18 +146,18 @@ function TeacherForm() {
             value={inputs.course || ""}
             onChange={handleChange}
           />
+          <br />
+          <p className="title">Write about your skill</p>
+          <textarea
+            className="txtarea"
+            name="description"
+            value={inputs.description || ""}
+            onChange={handleChange}
+          />
+          <br />
+          <br />
+          <input className="subButton" type="submit" value="Submit" />
         </div>
-        <br />
-        <p className="title">Write about your skill</p>
-        <textarea
-          className="txtarea"
-          name="description"
-          value={inputs.description || ""}
-          onChange={handleChange}
-        />
-        <br />
-        <br />
-        <input className="subButton" type="submit" value="Submit" />
       </form>
     </div>
   );
