@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useEffect } from "react";
+import axios from "axios";
+import StudentForm from "./registration/StudentForm";
+import TeacherForm from "./registration/TeacherForm";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  useEffect(() => {
+    const printdata = async () => {
+      await axios
+        .post(`${process.env.REACT_APP_API}/api/auth/login`, {
+          email: "latesadcst@gmail.com",
+          password: "jaidan",
+        })
+        .then((response) => {
+          console.log(response.data);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    };
+    printdata();
+  });
+
+  return <div className="App"></div>;
 }
 
 export default App;

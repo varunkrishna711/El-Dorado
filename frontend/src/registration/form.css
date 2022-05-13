@@ -1,0 +1,56 @@
+.component {
+  margin-top: 10%;
+  margin-left: 30%;
+  margin-bottom: 5%;
+}
+
+.heading {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 50px;
+}
+
+.inp {
+  padding: 15px;
+  font-size: 25px;
+  border-color: white white black white;
+  border-top: 0ch;
+  border-left: 0ch;
+  border-right: 0ch;
+}
+
+.gender {
+  display: inline;
+  font-size: 25px;
+}
+
+.title {
+  font-size: 25px;
+}
+
+.txtarea {
+  height: 100%;
+  width: 40%;
+  font-size: 25px;
+  resize: none;
+}
+
+.subButton {
+  padding: 10px;
+  height: 55px;
+  width: 120px;
+  font-size: 20px;
+  background-color: rgb(82, 165, 165);
+  outline: none;
+  border: none;
+}
+
+input {
+  margin-left: 15px;
+}
+
+input[type="radio"] {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+  transform: scale(1.5);
+  margin-right: 5px;
+}
