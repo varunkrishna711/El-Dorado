@@ -1,0 +1,14 @@
+.imgbody{
+	background-image: url("bg.jpeg");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.header{
+	text-align: center;
+	font-family:fantasy;
+	color: darkcyan;
+}
+
