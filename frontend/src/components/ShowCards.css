@@ -1,0 +1,13 @@
+.show-name {
+    margin-left: 35px;
+}
+
+.show-card-image {
+    object-fit: cover;
+    padding-left: 20px;
+}
+
+.show-image {
+    height:180px;
+    border-radius: 50%;
+}
