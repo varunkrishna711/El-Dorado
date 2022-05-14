@@ -5,7 +5,7 @@ import { useState } from "react";
 import TextField from "@mui/material/TextField";
 import "./bookingpage.css";
 
-function Bookingpage() {
+function Bookingpage({user}) {
 
 
   return (
@@ -29,6 +29,7 @@ function Bookingpage() {
       <div className="shows">
         <div className="card-body">
           <Card
+            user = {user}
             art_form="Kathakali"
             image="https://imgs.search.brave.com/Ta2Rw2f_G3qhBIg0YJ2YEkmzji7qnwMOB_5OhuGQU6k/rs:fit:736:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5T/YlU3a2JhaFhPYUl6/dlRkRjFlZ2VRSGFF/eCZwaWQ9QXBp"
             place="Kottayam, Kerala"

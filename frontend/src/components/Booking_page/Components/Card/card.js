@@ -5,20 +5,19 @@ import { useRef } from "react";
 
 function Card(props) {
   const priceRef = useRef();
+  const wrapref = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("clicked");
-
+    // if (props.user.loggedIn) {
     const razorPayPaymentHandler = async () => {
       const API_URL = process.env.REACT_APP_API;
       const orderUrl = `${API_URL}/api/razorpay/book/${props.amount}`;
-      //   console.log(props);
       const response = await axios
         .get(orderUrl)
         .then((res) => res.data)
         .catch((err) => console.log(err));
-    //   console.log(response);
       const data = response;
       console.log("App -> razorPayPaymentHandler -> data", data);
 
@@ -39,8 +38,7 @@ function Card(props) {
               successObj
             );
             if (captured) {
-                console.log("success");
-                
+              console.log("success");
             }
           } catch (err) {
             console.log(err);
@@ -56,6 +54,9 @@ function Card(props) {
     };
 
     razorPayPaymentHandler();
+    // } else {
+    //   console.log("login to continue");
+    // }
   };
 
   return (

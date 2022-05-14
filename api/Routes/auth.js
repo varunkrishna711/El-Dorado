@@ -52,7 +52,7 @@ router.post("/register", async (req, res) => {
     const course = await newCourse.save();
     console.log(user);
     console.log(course);
-    res.status(200).json(course );
+    res.status(200).json(course);
   } catch (err) {
     console.log(err);
   }

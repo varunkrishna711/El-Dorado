@@ -81,6 +81,6 @@ function Learn() {
           </div>
         </div>
     </div>
-  )  ;
+  )  
 }
 export default Learn;

@@ -3,7 +3,7 @@ import "./login.css";
 import { useRef } from "react";
 import axios from "axios";
 
-const Login = () => {
+const Login = ({ user }) => {
   const emailRef = useRef();
   const passRef = useRef();
   const checkRef = useRef();
@@ -19,10 +19,17 @@ const Login = () => {
     };
     console.log(data);
     const login = async () => {
-      await axios
-        .post(`${process.env.REACT_APP_URI}/api/auth/login`, data)
-        .then((res) => res.status(200).json())
-        .catch((err) => console.log(err));
+      const logindata = await axios.post(
+        `${process.env.REACT_APP_API}/api/auth/login`,
+        data
+      );
+      console.log(logindata);
+      // .then((res) => {
+      //   console.log(res.data);
+      //   user.setLoggedIn(res.data);
+      //   console.log(user.loggedIn);
+      // })
+      // .catch((err) => console.log(err.body));
     };
     login();
   };
@@ -30,15 +37,25 @@ const Login = () => {
   return (
     <div className="login">
       <div className="textfields">
-        <label for="email">
-          Email
+        <label for="email" style={{ color: "#fff" }}>
+          <span style={{ color: "#fff" }}>Email</span>
           <br />
-          <input name="email" type="text" ref={emailRef} />
+          <input
+            name="email"
+            className="input-login"
+            type="text"
+            ref={emailRef}
+          />
         </label>
-        <label for="password">
-          Password
+        <label for="password" style={{ color: "#fff" }}>
+          <span style={{ color: "#fff" }}>Password</span>
           <br />
-          <input name="password" type="password" ref={passRef} />
+          <input
+            name="password"
+            className="input-login"
+            type="password"
+            ref={passRef}
+          />
         </label>
       </div>
       <div className="check">
@@ -50,7 +67,14 @@ const Login = () => {
         LogIn
       </button>
       <span className="note">
-        Sign Up as <a href="/regstudent">User</a> or <a href="/regteacher">Teacher</a>
+        Sign Up as{" "}
+        <a href="/regstudent" style={{ color: "#fff" }}>
+          User
+        </a>{" "}
+        or{" "}
+        <a href="/regteacher" style={{ color: "#fff" }}>
+          Teacher
+        </a>
       </span>
     </div>
   );
