@@ -15,20 +15,20 @@ function TeacherForm() {
     event.preventDefault();
     console.log({ ...inputs, isTeacher: true });
     const printdata = async () => {
+      console.log("iside");
       await axios
         .post(`${process.env.REACT_APP_API}/api/auth/register`, {
           ...inputs,
           isTeacher: true,
         })
         .then((response) => {
-          console.log(response.data);
+          console.log(response);
         })
         .catch((error) => {
           console.log(error);
         });
-
-      printdata();
     };
+    printdata();
   };
 
   return (
@@ -147,7 +147,7 @@ function TeacherForm() {
             onChange={handleChange}
           />
           <br />
-          <p className="title">Write about your skill</p>
+          <p className="title">Write about your skill and courses</p>
           <textarea
             className="txtarea"
             name="description"
