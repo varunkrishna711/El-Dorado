@@ -1,24 +1,32 @@
-.imgbody{
-	padding-top: 20px;
-	height: 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+body{
+    margin: 0%;
 }
 
-
-.heading{
-	text-align: center;
-	font-family: fantasy;
+.imgbody {
+    padding-top: 20px;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1557682257-2f9c37a3a5f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvbG9yc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.cards{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
+.header {
+    text-align: center;
+    font-family: fantasy;
+    color: darkcyan;
+    font-size: x-large;
 }
-.seconddiv{
-	width: auto;
+
+.heading {
+    text-align: center;
+    font-size: 23px;
+}
+
+.compcard{
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }

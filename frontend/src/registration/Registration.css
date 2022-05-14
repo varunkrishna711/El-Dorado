@@ -1,0 +1,110 @@
+body{
+    margin: none;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1597423243747-d6d0f41092df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fGFydHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
+    background-repeat: none;
+    background-size: cover;
+    
+}
+
+.lbl{
+    /* margin-left: 70%; */
+    color: black;
+
+}
+.lbl1{
+     /* margin-bottom: 10rem; */
+    /* margin-left: 5rem;  */
+    color: #8B8000 !important;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    /* position: absolute; */
+    
+}
+
+input[type=text],input[type=email],input[type=number]{
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+
+.rules{
+    /* margin-top: 20rem;
+    margin-left: 5rem; */
+    /* position: fixed; */
+    position: absolute;
+    top: 12rem;
+    color: red;
+    height: auto;
+    width: 50%;
+    margin: none;
+    
+
+}
+.desc{
+    font-size: 25px;
+}
+
+.heading{
+    font-size: 30px;
+
+}
+
+.submitbtn{
+    /* margin-left: 70%; */
+    border-radius: 20%;
+    padding: 10px;
+    background-color: green;
+    color: #fff;
+}
+
+
+.apply-det{
+    padding: 15px;
+    position: relative;
+    height: auto;
+    box-shadow: 3px 2px 5px 10px #888888;
+    background-image: linear-gradient(to right, #B0FF08, #D7FF04, #FFFF00 );
+    position: absolute;
+    right: 0;
+    top: 10rem;
+}
+#adr{
+    padding: 3rem;
+}
+
+.heading{
+    /* margin-left: 70%; */
+   
+    width: auto;
+}
+.form-container{
+    position: absolute;
+    padding: 30px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 80%;
+}
+.wrapper{
+    width: 40%;
+}
+form{
+    width: 100%;
+}
+
+label{
+    color: blue !important;
+}
+ 
+.gen
+{
+    color: black !important;
+}
