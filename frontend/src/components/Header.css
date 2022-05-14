@@ -117,17 +117,16 @@
     position: absolute;
     top: 75px;
     right: 3rem;
-    
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    display:none;
+    display: none;
   }
 
   .pro-button1{
     top: 3rem;
     border-radius: 10px;
-    background-color: rgb(205, 187, 187);
+    background: linear-gradient(to right, red 0%, blue 100%);
     color: white;
     font-weight: bold;
   }
@@ -136,7 +135,7 @@
     
     top:10rem;
     border-radius: 10px;
-    background-color: rgb(205, 187, 187);
+    background: linear-gradient(to right, red 0%, blue 100%);
     color: white;
     font-weight: bold;
   }

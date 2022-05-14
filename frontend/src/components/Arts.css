@@ -27,3 +27,17 @@
     justify-content: space-evenly;
     
 }
+
+.headtod{
+    font-family: fantasy;
+    color: gray;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+
+.todcompe{
+    display: flex;
+    flex-direction: row;
+}

@@ -1,5 +1,6 @@
 import ShowCards from './ShowCards';
 import "./Arts.css";
+import Showcomp from "./Showcomp.js";
 
 const PopularShows = () => {
     return ( 
@@ -22,7 +23,7 @@ const PopularShows = () => {
                 />
 
                 <ShowCards 
-                    image="https://imgs.search.brave.com/4PFWMsiuaVGjul6v4HtP1Cf2fFUGsg8q0_jo3LD6Pfs/rs:fit:200:200:1/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9h/L2FlL0t1Y2hpcHVk/aV9QZXJmb3JtZXJf/RFMuanBn"
+                    image="https://imgs.search.brave.com/clChXp4KCRi9XN2vF4tViEK1onr2AMIfVUTCNphNEII/rs:fit:1024:746:1/g:ce/aHR0cDovLzMuYnAu/YmxvZ3Nwb3QuY29t/Ly1Zc2FJa3JHNEVp/Yy9ULUhXbTQ0MHpK/SS9BQUFBQUFBQUE4/RS9ySmtHOXlhUk5k/MC9zMTYwMC9hbmFs/dWl6YS10b3JyZXMt/YS1xdWVlbi1vZi1r/dWNoaXB1ZGktZGFu/Y2UtaHVtYmxlNC0x/MDI0eDc0Ni5qcGc"
                     name="Kuchippudi"
                     url='/kuchipodi'
                 />
@@ -34,11 +35,30 @@ const PopularShows = () => {
                 />
 
                 <ShowCards 
-                    image="https://imgs.search.brave.com/-GtHCELl-6hetY-fa-5n1VOFJnLPhLFJI0JcXXlMoHs/rs:fit:920:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5y/eWJMcUhTQVRaVlRk/Nk40dVFMOTdBSGFE/MCZwaWQ9QXBp"
+                    image="https://imgs.search.brave.com/2ynCUWtD35yuk4GfDcmcF8VTuYRZvPD2ERw9pHFXUYQ/rs:fit:711:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5P/ZFZnSjAtNVNJYU13/R0xueVlMYmh3SGFF/OCZwaWQ9QXBp"
                     name="Cheraw"
                     url="/"
                 />
 
+            </div>
+            <div className='todcomp'>
+                <h1 className='headtod'>LATEST UPCOMING COMPETITIONS</h1>
+                <div className='todcompe'>
+                    <Showcomp
+                        image="https://i.pinimg.com/originals/5a/f6/43/5af6436f5efa34c49376a8f9b91e7ac1.jpg"
+                        name="Oppana intercollege Competition"
+                        venue="Camlot"
+                        date="May 21, 2022"
+                        prize="5K"
+                    />
+                    <Showcomp
+                        image="https://imgs.search.brave.com/W4_MTe0iLJLYEg0U21JBnv4JCIHI0jYCy3go3WcZW80/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5M/UVdLSFc4SWF5VTdJ/dE5LQW5zUjR3SGFF/SyZwaWQ9QXBp"
+                        name="All Kerala Margankalli Competition"
+                        venue="Thiruvananthapuram"
+                        date="May 25, 2022"
+                        prize="10K"
+                    />
+                </div>
             </div>
         </div>
      );

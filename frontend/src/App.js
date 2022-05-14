@@ -17,6 +17,7 @@ import Archives from "./components/Archives/Archives";
 import Kathakali from "./components/Description/Kathakalipg";
 import Mohiniyattom from "./components/Description/Mohiniyattompg";
 import Kuchipodi from "./components/Description/Kuchipodipg";
+import Learn from './components/Learn/Learncards';
 
 // import { useEffect } from 'react';
 // import {auth} from './firebase';
@@ -72,6 +73,10 @@ function App() {
 
         <Routes>
           <Route path='/kuchipodi' element={<> <Header /> < Kuchipodi />  <Footer /> </>} />
+        </Routes>
+
+        <Routes>
+          <Route path='/learn' element={<> <Header /> <Learn/> <Footer /> </>} />
         </Routes>
 
 
