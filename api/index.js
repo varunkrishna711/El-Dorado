@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const authRoute = require("./Routes/auth");
+const razorRoute = require("./Routes/razorpay");
 const dotenv = require("dotenv");
 const cors = require("cors");
 dotenv.config();
@@ -8,7 +9,7 @@ dotenv.config();
 const app = express();
 mongoose
   .connect(process.env.DB_URI)
-  .then(() => console.log("datase connected .."))
+  .then(() => console.log("database connected .."))
   .catch((err) => console.log(err));
 
 app.use(
@@ -18,7 +19,10 @@ app.use(
 );
 
 app.use(express.json());
+app.get('/',(req,res) => res.send('hello world'))
+
 app.use("/api/auth", authRoute);
+app.use("/api/razorpay", razorRoute);
 
 const port = process.env.PORT || 4000;
 app.listen(port, () => console.log("running on port 4000.."));
