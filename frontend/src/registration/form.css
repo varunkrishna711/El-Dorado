@@ -1,36 +1,54 @@
+* {
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
 .component {
-  margin-top: 10%;
+  /* margin-top: 10%;
   margin-left: 30%;
-  margin-bottom: 5%;
+  margin-bottom: 5%; */
+  /* margin: 70px;
+   */
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+  padding: 30px;
+  width: 60%;
+  max-width: 1000px;
+  margin: 50px auto;
+  /* border: 2px #000; */
+}
+
+.fields {
+  font-size: 22px;
 }
 
 .heading {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 50px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 26px;
+  font-weight: 600;
 }
 
 .inp {
   padding: 15px;
-  font-size: 25px;
-  border-color: white white black white;
-  border-top: 0ch;
-  border-left: 0ch;
-  border-right: 0ch;
+  font-size: 18px;
+  width: 300px;
+  border: 2px #000;
 }
 
 .gender {
   display: inline;
-  font-size: 25px;
+  font-size: 24px;
 }
 
 .title {
-  font-size: 25px;
+  font-family: inherit;
+  font-size: 22px;
 }
 
 .txtarea {
-  height: 100%;
+  height: 100px;
   width: 40%;
-  font-size: 25px;
+  font-size: 22px;
   resize: none;
 }
 
@@ -49,6 +67,8 @@ input {
 }
 
 input[type="radio"] {
+  width: auto;
+  margin-left: 15px;
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
   transform: scale(1.5);
