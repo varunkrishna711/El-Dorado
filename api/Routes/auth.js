@@ -2,9 +2,10 @@ const router = require("express").Router();
 const User = require("../Models/User");
 const Teacher = require("../Models/Teacher");
 const CryptoJS = require("crypto-js");
+const Course = require("../Models/Course");
 
 router.post("/register", async (req, res) => {
-  let newUser;
+  let newUser, newCourse;
   if (req.body.isTeacher) {
     newUser = new Teacher({
       username: req.body.username,
@@ -20,6 +21,16 @@ router.post("/register", async (req, res) => {
       isAdmin: req.body.isAdmin,
       courses: req.body.courses,
       students: req.body.students,
+    });
+    newCourse = new Course({
+      name: req.body.course,
+      details: req.body.desciption,
+      teacher: req.body.username,
+      location: req.body.address,
+      address: req.body.address,
+      isVerified: true,
+      img: req.body.img,
+      // id:req.body.phnumber
     });
   } else {
     newUser = new User({
@@ -38,8 +49,10 @@ router.post("/register", async (req, res) => {
 
   try {
     const user = await newUser.save();
+    const course = await newCourse.save();
     console.log(user);
-    res.json(user);
+    console.log(course);
+    res.status(200).json(course );
   } catch (err) {
     console.log(err);
   }
