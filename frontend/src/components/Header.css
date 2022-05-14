@@ -151,3 +151,9 @@
 .pro:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
+.a-text {
+  color: #fff;
+}
+.a-text:hover {
+  color: inherit;
+}

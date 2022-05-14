@@ -12,7 +12,7 @@ const Header = ({ user }) => {
     const dis = document.querySelector(".profile-info");
     dis.style.display = "none";
   };
-    
+
   const [isScrolled, setIsScrolled] = useState(false);
 
   window.onscroll = () => {
@@ -51,10 +51,10 @@ const Header = ({ user }) => {
           />
           <div className="profile-info" onMouseLeave={hide}>
             <div className="pro-button1 pro">
-              <a href="/profile">Profile</a>
+              <a className="a-text" href="/profile">Profile</a>
             </div>
             <div className="pro-button2 pro">
-              <a href="/login">{user.loggedIn ? "Logout" : "Login"}</a>
+              <a className="a-text" href="/login">{user.loggedIn ? "Logout" : "Login"}</a>
             </div>
           </div>
         </div>

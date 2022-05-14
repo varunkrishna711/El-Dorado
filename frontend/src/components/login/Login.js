@@ -19,14 +19,17 @@ const Login = ({ user }) => {
     };
     console.log(data);
     const login = async () => {
-      await axios
-        .post(`${process.env.REACT_APP_API}/api/auth/login`, data)
-        .then((res) => {
-          console.log(res.data);
-          user.setLoggedIn(res.data);
-          console.log(user.loggedIn);
-        })
-        .catch((err) => console.log(err.body));
+      const logindata = await axios.post(
+        `${process.env.REACT_APP_API}/api/auth/login`,
+        data
+      );
+      console.log(logindata);
+      // .then((res) => {
+      //   console.log(res.data);
+      //   user.setLoggedIn(res.data);
+      //   console.log(user.loggedIn);
+      // })
+      // .catch((err) => console.log(err.body));
     };
     login();
   };
@@ -34,8 +37,8 @@ const Login = ({ user }) => {
   return (
     <div className="login">
       <div className="textfields">
-        <label for="email" style={{"color":"#fff"}}>
-          <span style={{"color":"#fff"}}>Email</span>
+        <label for="email" style={{ color: "#fff" }}>
+          <span style={{ color: "#fff" }}>Email</span>
           <br />
           <input
             name="email"
@@ -44,8 +47,8 @@ const Login = ({ user }) => {
             ref={emailRef}
           />
         </label>
-        <label for="password" style={{"color":"#fff"}}>
-        <span style={{"color":"#fff"}}>Password</span>
+        <label for="password" style={{ color: "#fff" }}>
+          <span style={{ color: "#fff" }}>Password</span>
           <br />
           <input
             name="password"
