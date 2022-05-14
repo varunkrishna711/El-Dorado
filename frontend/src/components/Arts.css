@@ -1,12 +1,28 @@
+.pop-body{
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1529641484336-ef35148bab06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: contrast(1.5);
+}
+
+.pop-head{
+    padding-top: 30px;
+}
+
 .head{
+    font-family: fantasy;
+    color: gray;
     padding: 30px;
     text-align: center;
-    font-size: 50px;
+    font-size: 100px;
+    font-weight: 900;
 }
 
 
 .PopularShows {
-    padding-top: 4rem;
+    color: whitesmoke;
+    padding-top: 2rem;
     display: flex;
     justify-content: space-evenly;
     

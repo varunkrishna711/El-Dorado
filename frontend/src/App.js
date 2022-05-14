@@ -12,6 +12,11 @@ import Bookingpage from "./components/Booking_page/Bookingpage";
 import Login from "./components/login/Login";
 import StudentForm from "./components/registration/StudentForm";
 import TeacherForm from "./components/registration/TeacherForm";
+import Registration from "./components/registration/Registration";
+import Archives from "./components/Archives/Archives";
+import Kathakali from "./components/Description/Kathakalipg";
+import Mohiniyattom from "./components/Description/Mohiniyattompg";
+import Kuchipodi from "./components/Description/Kuchipodipg";
 
 // import { useEffect } from 'react';
 // import {auth} from './firebase';
@@ -102,6 +107,10 @@ function App() {
         </Routes>
 
         <Routes>
+          <Route path='/archives' element = {<> <Header /> <Archives /> <Footer /> </>} />
+        </Routes>
+
+        <Routes>
           <Route
             path="/regteacher"
             element={
@@ -112,6 +121,24 @@ function App() {
             }
           />
         </Routes>
+
+        <Routes>
+          <Route path='/registration' element={<> <Header /> < Registration />  </>} />
+        </Routes>
+
+        <Routes>
+          <Route path='/kathakali' element={<> <Header /> < Kathakali />  <Footer /> </>} />
+        </Routes>
+
+        <Routes>
+          <Route path='/mohiniyattom' element={<> <Header /> < Mohiniyattom />  <Footer /> </>} />
+        </Routes>
+
+        <Routes>
+          <Route path='/kuchipodi' element={<> <Header /> < Kuchipodi />  <Footer /> </>} />
+        </Routes>
+
+
       </div>
     </Router>
   );
