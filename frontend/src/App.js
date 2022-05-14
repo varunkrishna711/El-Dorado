@@ -27,7 +27,7 @@ function App() {
         </Routes>
 
         <Routes>
-          <Route path='/competitions' element={<> <Competitions /> </>} />
+          {/* <Route path='/competitions' element={<> <Competitions /> </>} /> */}
         </Routes>
       </div>
     </Router>
