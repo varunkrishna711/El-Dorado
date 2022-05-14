@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/El-Dorado/static/css/main.9f7ebaf0.css",
-    "main.js": "/El-Dorado/static/js/main.4440fb63.js",
+    "main.css": "/El-Dorado/static/css/main.b0424d8b.css",
+    "main.js": "/El-Dorado/static/js/main.30d7b9c0.js",
     "index.html": "/El-Dorado/index.html",
-    "main.9f7ebaf0.css.map": "/El-Dorado/static/css/main.9f7ebaf0.css.map",
-    "main.4440fb63.js.map": "/El-Dorado/static/js/main.4440fb63.js.map"
+    "main.b0424d8b.css.map": "/El-Dorado/static/css/main.b0424d8b.css.map",
+    "main.30d7b9c0.js.map": "/El-Dorado/static/js/main.30d7b9c0.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f7ebaf0.css",
-    "static/js/main.4440fb63.js"
+    "static/css/main.b0424d8b.css",
+    "static/js/main.30d7b9c0.js"
   ]
 }
