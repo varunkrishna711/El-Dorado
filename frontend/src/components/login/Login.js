@@ -50,7 +50,7 @@ const Login = () => {
         LogIn
       </button>
       <span className="note">
-        Sign Up as <a href="">User</a> or <a href="">Teacher</a>
+        Sign Up as <a href="/regstudent">User</a> or <a href="/regteacher">Teacher</a>
       </span>
     </div>
   );

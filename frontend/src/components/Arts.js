@@ -1,5 +1,5 @@
 import ShowCards from './ShowCards';
-import "./PopularShows.css";
+import "./Arts.css";
 
 const PopularShows = () => {
     return ( 
