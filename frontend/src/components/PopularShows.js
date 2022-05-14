@@ -10,7 +10,7 @@ const PopularShows = () => {
 
             <div className="PopularShows">
                 <ShowCards 
-                    image="https://imgs.search.brave.com/yXHMY6KP2WXb91WzXEC8UhKcL5ffxjaJ4k0iKf_QYUw/rs:fit:200:200:1/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9j/L2NjL01vaGluaXlh/dHRhbV9hdF9LYW5u/dXJfZGlzdHJpY3Rf/c2Nob29sX2thbG90/aHNhdmFtXzIwMTlf/MTAuanBn"
+                    image="https://st4.depositphotos.com/15460442/38654/i/450/depositphotos_386549970-stock-photo-bengaluru-india-april-6th-sattriya.jpg"
                     name="Mohiniyattom"
                 />
 

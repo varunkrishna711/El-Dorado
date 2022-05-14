@@ -6,13 +6,19 @@
 	background-size: cover;
 }
 
-.header{
-	text-align: center;
-	font-family:fantasy;
-	color: darkcyan;
-}
 
 .heading{
 	text-align: center;
+	font-family: fantasy;
 }
 
+.cards{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.seconddiv{
+	width: auto;
+}

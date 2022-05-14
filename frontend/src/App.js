@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 // import Login from './Login';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import PopularShows from "./components/PopularShows";
+
 // import { useEffect } from 'react';
 // import {auth} from './firebase';
 // import {useStateValue} from './StateProvider';
@@ -23,6 +24,10 @@ function App() {
               </>
             }
           />
+        </Routes>
+
+        <Routes>
+          <Route path='/competitions' element={<> <Competitions /> </>} />
         </Routes>
       </div>
     </Router>
