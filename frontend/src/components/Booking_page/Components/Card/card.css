@@ -1,57 +1,79 @@
-.card-image{
-    /* border-radius: 50%; */
-    margin-top: -30px;
-    height: 110%;
-    width: 400px;
-    border-radius: 10%;
-    object-fit: fill;
+.card-image {
+  /* border-radius: 50%; */
+  margin-top: -30px;
+  height: 110%;
+  width: 400px;
+  border-radius: 10%;
+  object-fit: fill;
 }
 
-.top{
-    height: 10rem;
-
+.top {
+  height: 10rem;
 }
-.bottom{
-    height: 10rem;
-    width: 100%;
-    padding-left: 80px !important;
-    padding-bottom: 10px !important;
-    padding: 10px;
-}
-
-.card{
-    width: 400px;
-    height: 400px;
-    /* padding: 15px; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10%;
-    box-shadow: 0px 0px 8px 1px #888888;
-    box-sizing: border-box;
+.bottom {
+  height: 10rem;
+  width: 100%;
+  padding-left: 80px !important;
+  padding-bottom: 10px !important;
+  padding: 10px;
 }
 
-.book_bttn{
-    background-color: red;
-    color: white;
-    border-radius: 30px;
-    font-size: 14px;
-    font-weight: bold;
-    padding-left: 28px;
-    padding-right: 28px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    position: absolute; 
-    box-shadow: 3px #21215f;
-    text-size-adjust: 2rem;
-    box-shadow: 0px 2px #c9c9c9;
-    border: none;
-    outline: none;
-    cursor: pointer;
+.card {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  /* padding: 15px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+  box-shadow: 0px 0px 8px 1px #888888;
+  box-sizing: border-box;
 }
 
-.book_bttn:hover{
-    background-color: green;
-    color: white;
+.book_bttn {
+  background-color: red;
+  color: white;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  position: absolute;
+  box-shadow: 3px #21215f;
+  text-size-adjust: 2rem;
+  box-shadow: 0px 2px #c9c9c9;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.book_bttn:hover {
+  background-color: green;
+  color: white;
+}
+.wrapper {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: hide;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginpopup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 400px;
+}
+span.logintxt {
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }

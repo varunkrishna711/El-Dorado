@@ -37,7 +37,10 @@ input {
   border: none;
   outline: none;
 }
-
+.input-login {
+  margin-left: 0;
+  margin-right: 0;
+}
 button {
   width: 300px;
   padding: 15px 20px;
@@ -59,7 +62,7 @@ span {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: #fff;
 }
 
 .check {
