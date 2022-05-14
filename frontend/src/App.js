@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Arts from "./components/Arts";
 import Profile from "./components/Profile Page/Profile";
 import Competitions from "./components/Competitions";
-import Bookingpage from "./components/Booking_page/bookingpage";
+import Bookingpage from "./components/Booking_page/Bookingpage";
 import Login from "./components/login/Login";
 import StudentForm from "./components/registration/StudentForm";
 import TeacherForm from "./components/registration/TeacherForm";

@@ -27,8 +27,6 @@ const Footer = () => {
 
               <p>
                 Natika <br />
-                Bal Chand Lane, <br />
-                Allahabad <br />
                 India <br />
                 689 110 (India) <br /> <br />
                 

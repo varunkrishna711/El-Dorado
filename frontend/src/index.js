@@ -5,7 +5,6 @@ import Archives from "./components/Archives/Archives"
 import StudentForm from "./components/registration/StudentForm";
 import TeacherForm from "./components/registration/TeacherForm";
 import Login from "./components/login/Login";
-import Bookingpage from "./components/Booking_page/bookingpage";
 import Competitions from "./components/Competitions";
 
 
