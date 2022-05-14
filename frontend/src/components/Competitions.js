@@ -5,9 +5,8 @@ import './Competitions.css';
 const Competitions=()=>{
     return(
         <div className="imgbody">
-            <div class="header">
-			<h1 id="heading">COMPETITIONS</h1>
-		</div>
+			<h1 className="heading">COMPETITIONS</h1>
+    <div className="cards">
         <Showcomp
         image="https://scholarblogs.emory.edu/postcolonialstudies/files/2014/06/449px-Kathakalidancer.jpg"
         name="All Kerala Kathakali Competition"
@@ -52,6 +51,7 @@ const Competitions=()=>{
         date= "May 21, 2020"
         prize="5K"
       />
+      </div>
         </div>
     );
 }
