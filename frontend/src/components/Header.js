@@ -15,7 +15,6 @@ const Header = ({ user }) => {
     
   const [isScrolled, setIsScrolled] = useState(false);
 
-<<<<<<< HEAD
   window.onscroll = () => {
     setIsScrolled(window.pageYOffset === 0 ? false : true);
     return () => {

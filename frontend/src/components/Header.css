@@ -1,36 +1,20 @@
 .header {
-  
-/* <<<<<<< HEAD
   height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to right, red 0%, blue 100%);
+  /* background: url(""); */
   position: sticky;
   top: 0;
   z-index: 100;
   padding: 0 20px;
-  z-index: 100;
-}
-
-.scrolled {
-  background-color: rgba(0, 0, 0, 1);
-}
-
-a {
-  text-decoration: none;
-  color: #fff;
-}
-a:hover {
-  text-decoration: none;
 }
 
 .header_logo {
   width: 100px;
   height: 50%;
   object-fit: contain;
-  /* margin: 0 40px; */
-
   margin-top: 12px;
   font-family: cursive;
   text-decoration: none;
@@ -38,7 +22,7 @@ a:hover {
 }
 
 .header_logo:hover {
-  color: #fff;
+  color: black;
 }
 
 .header_search {
@@ -75,99 +59,40 @@ a:hover {
   margin-left: 10px;
   margin-right: 70px;
   margin-top: 12.5px;
-  font-weight: 600;
   color: white;
   align-items: flex-end;
 }
-======= */
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: linear-gradient(to right, red 0%, blue 100%);
-    /* background: url(""); */
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    padding: 0 20px;
-  }
-  
-  .header_logo {
-    width: 100px;
-    height: 50%;
-    object-fit: contain;
-    margin-top: 12px;
-    font-family: cursive;
-    text-decoration: none;
-    color:white;
-  }
-
-  .header_logo:hover{
-    color:black;
-  }
-  
-  .header_search {
-    display: flex;
-    flex: 1;
-    align-items: center;
-    border-radius: 24px;
-  }
-  
-  .header_searchInput {
-    height: 12px;
-    padding: 10px;
-    border: none;
-    width: 100%;
-  }
-  
-  .header_searchIcon {
-    padding: 5px;
-    height: 22px !important;
-    background-color: #cd9042;
-  }
-  
-  .header_nav {
-    display: flex;
-    justify-content: space-evenly;
-    margin-left: 25%;
-  }
-  
-  .header_option {
-    /* height: 250%;   */
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    margin-right: 70px;
-    margin-top: 12.5px;
-    color: white;
-    align-items: flex-end;
-  }
-/* >>>>>>> 023ee37f1b01d4455a3d216b25e07db58e1b8cf6 */
 
 .header_option:hover {
   color: red;
 }
 
 /* .header_options {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 12.5px;
-    color: white;
-    justify-content: space-evenly;
-  } */
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 12.5px;
+  color: white;
+  justify-content: space-evenly;
+} */
 
+.header_optionLineOne {
+  font-size: 15px;
+  display: flex;
+  justify-content: space-evenly;
+}
 
-  .profile-image {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 10px;
-    cursor: pointer;
-  }
+.header_optionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.header_optionBasket {
+  display: flex;
+  align-items: center;
+  color: white;
+}
 
 .header_basketCount {
   margin-left: 10px;
@@ -180,13 +105,10 @@ a:hover {
   border-radius: 50%;
   object-fit: cover;
   margin-right: 10px;
+  cursor: pointer;
 }
 
-/* .profile-image:hover {
-    cursor: pointer;
-    display: flex;
-  } */
-
+/* jaidan */
 .profile-info {
   position: absolute;
   top: 75px;

@@ -1,6 +1,5 @@
 // import './App.css';
 import Header from "./components/Header";
-import Home from "./components/Home";
 import Footer from "./components/Footer";
 import axios from "axios";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -23,7 +22,7 @@ import Kuchipodi from "./components/Description/Kuchipodipg";
 // import {useStateValue} from './StateProvider';
 
 function App() {
-  const [loggedIn, setLoggedIn] = useState(null);
+  const [loggedIn, setLoggedIn] = useState({});
 
   const login = async (data) => {
     await axios

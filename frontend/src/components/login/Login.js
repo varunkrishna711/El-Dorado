@@ -34,8 +34,8 @@ const Login = ({ user }) => {
   return (
     <div className="login">
       <div className="textfields">
-        <label for="email">
-          Email
+        <label for="email" style={{"color":"#fff"}}>
+          <span style={{"color":"#fff"}}>Email</span>
           <br />
           <input
             name="email"
@@ -44,8 +44,8 @@ const Login = ({ user }) => {
             ref={emailRef}
           />
         </label>
-        <label for="password">
-          Password
+        <label for="password" style={{"color":"#fff"}}>
+        <span style={{"color":"#fff"}}>Password</span>
           <br />
           <input
             name="password"
