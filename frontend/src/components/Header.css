@@ -3,7 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #ced0d2;
+    background: linear-gradient(to right, red 0%, blue 100%);
+    /* background: url(""); */
     position: sticky;
     top: 0;
     z-index: 100;
@@ -14,7 +15,6 @@
     width: 100px;
     height: 50%;
     object-fit: contain;
-    /* margin: 0 40px; */
     margin-top: 12px;
     font-family: cursive;
     text-decoration: none;
@@ -22,7 +22,7 @@
   }
 
   .header_logo:hover{
-    color:red;
+    color:black;
   }
   
   .header_search {
@@ -105,6 +105,7 @@
     border-radius: 50%;
     object-fit: cover;
     margin-right: 10px;
+    cursor: pointer;
   }
 
   /* .profile-image:hover {

@@ -5,7 +5,7 @@ import './Competitions.css';
 const Competitions = () => {
     return (
         <div className="imgbody">
-            <div class="header">
+            <div class="header2">
                 <h1 id="heading">COMPETITIONS</h1>
             </div>
             <div className="compcard">
